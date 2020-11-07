@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/app.css">
+    <script src="/app.js"></script>
+</head>
+
+<body>
+    <!-- 들여쓰기는 alt + shift + f -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">수정과 홈</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/chatroom">채팅방 입장</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/board">게시판</a>
+                    </li>
+                </ul>
+                <div class="button-box">
+                    <a class="btn btn-outline-primary" href="/login">로그인</a>
+                    <a class="btn btn-outline-success" href="/register">회원가입</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row my-4">
+            <div class="col-10 offset-1">
+                <div class="row" id="chatView">
+                    <div class="col-8">
+                        <ul id="chatList">
+                            <li class="msg">안녕하세요1</li>
+                            <li class="msg my">안녕하세요2</li>
+                        </ul>
+                        <div class="input-box" id="msgText">
+                            <input type="text">
+                            <button id="sendBtn"><i class="far fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        여기는 접속자 목록이 나오는 곳
+                    </div>
+                </div>
+            </div> <!-- end of col-10 offset-1 -->
+        </div> <!-- end of row-->
+
+        <div class="row">
+            <div class="col-12">
+                <footer class="bg-dark text-white p-3 text-center">
+                    Copyright &copy; All right reserved to SSJB.hs.kr
+                </footer>
+            </div>
+        </div>
+    </div> <!-- end of container -->
+</body>
+<!-- 10.114.52.99:9090 -->
+</html>
