@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디지털 시계</title>
+    <style type="text/css">
+        #digitalwatch {
+            width: 220px;
+            height: 40px;
+    
+            line-height: 40px;
+            text-align: center;
+    
+            font-size: 22px;
+            background-color: black;
+            color: yellow;
+        }
+        </style>
+</head>
+<body>
+    <p id="digitalwatch"></p>
+    <script type="text/javascript">
+        setInterval(function(){getCurrentDataTime();}, 1000 );
+        function getCurrentDataTime(){
+            var now = new Date();
+            var currentDate = now.getFullYear() + "-" + (now.getMonth()+1) + "-" + now.getDate();
+            var currentTime = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+            document.querySelector("#digitalwatch").innerHTML = currentDate + " " + currentTime;
+        }
+    </script>
+</body>
+</html>
